@@ -1,3 +1,5 @@
+import copy
+
 t = int(input())
 arr = list()
 pre_arr = list()
@@ -5,7 +7,7 @@ for i in range(1, t + 1):
     N = int(input())
     print("#{}".format(i))
     for j in range(1, N + 1):
-        pre_arr = list(arr)
+        pre_arr = arr.copy()
         del arr[0:]
         for z in range(0, j):
             if z == j-1:
