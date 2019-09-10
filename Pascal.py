@@ -1,3 +1,4 @@
+#copy에 대해 배우고 간다
 import copy
 
 t = int(input())
