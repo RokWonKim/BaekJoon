@@ -22,9 +22,7 @@ int main(void) {
         max_value = max(max_value, arr[i]);
     }
 
-    right = M * max_value;
-
-    
+    right = M * max_value;    
     ans = right;
 
     while (left <= right) {
