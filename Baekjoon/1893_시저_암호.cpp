@@ -38,11 +38,9 @@ bool kmp(string &W, string &S) {
         while ( j > 0 && S[i] != W[j] )
             j = fail[j-1];
         if (S[i] == W[j]) {
-            j++;
-            if ( j == ws) {
+            if ( ++j == ws) {
                 ans++;
-                j = fail[j-2];
-
+                j = fail[j-1];
                 if( ans >= 2)
                     return false;
             }
