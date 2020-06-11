@@ -2,7 +2,7 @@
 #include<vector>
 #include<queue>
 #include<string>
-#include<string.h>
+#include<cstring>
 
 using namespace std;
 
