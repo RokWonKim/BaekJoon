@@ -7,6 +7,7 @@
 using namespace std;
 
 int check[1 << (12*2)];
+//같은 부호인지 확인
 int confirm(int x) {
     if(!x) return 0; 
     return x > 0?1:-1;
